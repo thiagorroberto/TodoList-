@@ -1,5 +1,4 @@
 import styles from './Tasks.module.css'
-
 import noTasksImg from '../../assets/noTasks.svg'
 import Task from '../Task/Task'
 
@@ -17,7 +16,6 @@ export default function Tasks({ tasks, deleteTask, countTasksCompleted, listTask
                 </div>
             </header>
             <main className={styles.listContainer}>
-                
                 {tasks.length > 0 ? (
                     tasks.map(task => (
                         <Task key={task} task={task} deleteTask={deleteTask} countTasksCompleted={countTasksCompleted} />

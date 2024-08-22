@@ -13,14 +13,12 @@ export default function App() {
 
   function createTask(task) {
     setTasks(state => [...state, task])
-    
   }
 
   function deleteTask(taskDeleted) {
     const newList = tasks.filter(task => task !== taskDeleted)
-    console.log(newList);
-    
     setTasks(newList)
+    setTasksCompleted(tasksCompleted - 1)
     
   }
 
@@ -30,7 +28,6 @@ export default function App() {
     } else {
       setTasksCompleted(tasksCompleted - 1)
     }
-    
   }
 
   return (
