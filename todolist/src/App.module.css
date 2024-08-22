@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.tasks {
+    display: flex;
+    width: 100%;
+}

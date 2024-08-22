@@ -1,0 +1,37 @@
+.formContainer {
+    display: flex;
+    gap: 1rem;
+    max-width: 1440px;
+    margin: -4.5rem auto;
+    flex: 1;
+}
+
+.formContainer input {
+    background-color: var(--gray-500);
+    border: none;
+    color: var(--gray-300);
+    border-radius: 6px;
+    height: 54px;
+    width: 638px;
+    padding: 10px;
+}
+
+.formContainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: white;
+    background-color: var(--blue-dark);
+    width: 90px;
+    height: 52px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .formContainer input {
+        width: 300px;
+    }
+}

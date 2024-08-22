@@ -1,0 +1,92 @@
+.tasksContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 736px;
+    margin: 4rem auto;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.tasksContainer header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-400);
+    padding-bottom: 1.5rem;
+}
+
+.createdContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.completedContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.completedContainer strong {
+    color: var(--purple);
+    font-size: 14px;
+}
+
+
+.createdContainer strong {
+    color: var(--blue);
+    font-size: 14px;
+}
+
+.completedContainer p,
+.createdContainer p {
+    display: flex;
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    padding: 5px;
+    border-radius: 8px;
+    height: 19px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.noTasksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.noTasksContainer img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1rem;
+}
+
+.firstText {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--gray-300);
+}
+
+.secondText {
+    font-size: 16px;
+    color: var(--gray-300);
+    font-weight: 300;
+}
+
+@media (max-width: 750px) {
+    .tasksContainer {
+        width: 400px
+    }
+  }
